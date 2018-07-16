@@ -1,0 +1,69 @@
+body {
+  background-image: url("city.png");
+  background-repeat: repeat;
+}
+
+#box{
+  margin-left: 75px;
+}
+
+h1 {
+  border: 10px solid #37474F;
+  padding: 33px;
+  width: 22%;
+}
+
+table {
+  border-top: solid #90A4AE 15px;
+  border-bottom: ridge #90A4AE 15px;
+  border-left: dotted #90A4AE 15px;
+  border-right: dashed #90A4AE 15px;
+}
+
+#header{
+  background-color: #F3E5F5;
+}
+
+.head{
+  padding:10px;
+}
+
+#oneone{
+  background-color: #E3F2FD;
+  border: solid #0be881;
+}
+
+#onetwo{
+  background-color: #E0F7FA;
+  border: solid #ffa801;
+}
+
+#twoone{
+  background-color: #E8F5E9;
+  border: solid #ff5e57;
+}
+
+#twotwo{
+  background-color: #FFFDE7;
+  border: solid #0984e3;
+}
+
+ul.a {
+  list-style-image: url("icon1.png");
+}
+
+ul.aa {
+  color: #ffa801;
+}
+
+ol.greek{
+  list-style-type:lower-greek;
+}
+
+ul.b {
+  list-style-image: url("icon2.png");
+}
+
+ul.bb{
+  color: #0984e3;
+}

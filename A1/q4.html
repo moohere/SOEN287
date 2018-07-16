@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Assignment 1 - Question 4 </title>
+  <meta charset = "utf-8" />
+  <style type="text/css">
+  body {background-color: #FFF9C4;}
+  img {width: 100px;}
+  #studentinfo {background-color: #BBDEFB; border-color: #1565C0; font-weight: bold;}
+  #studentlegend {font-size: 18px; color: #1565C0; font-weight: normal;}
+  #demoinfo {background-color: #B2DFDB; border-color: #2E7D32; font-weight: bold;}
+  #demolegend {font-size: 18px; color: #2E7D32; font-weight: normal;}
+  .radios {font-weight: normal;}
+  .checkboxes {font-weight: normal;}
+  </style>
+</head>
+<body>
+  <h1><a target="_blank" href="https://users.encs.concordia.ca/~ait/"><img src=ENCS_Logo.png alt="Concordia University Logo"></a>&nbspAssignment 1 Demo Scheduling</h1>
+  <p>
+    <fieldset id="studentinfo">
+      <legend id="studentlegend">Student Information</legend>
+      <div class="info">
+        Student Name<br/>
+        <input name="firstname" type="text" placeholder="First Name">
+        <input name="lastname" type="text" placeholder="Last Name">
+        <br/><br/>
+        Student ID
+        <input name="studentid" type="number" placeholder="Numbers Only">
+        <br/><br/>
+        Email Address
+        <input name="emailaddress" type="email" placeholder="Email Address">
+      </div>
+    </fieldset>
+    <br/>
+    <fieldset id="demoinfo">
+      <legend id="demolegend">Demo Information</legend>
+      Assignment to demo:<br/>
+      <div class="radios">
+        <input type="radio" name="assignment" value="a1" checked>Assignment 1<br/>
+        <input type="radio" name="assignment" value="a2">Assignment 2<br/>
+        <input type="radio" name="assignment" value="a3">Assignment 3<br/>
+      </div>
+      <br/>
+      Features completed:<br/>
+      <div class="checkboxes">
+        <input type="checkbox" name="features" value="part1" checked>Part I
+        <input type="checkbox" name="features" value="part2">Part II
+        <input type="checkbox" name="features" value="part3">Part III<br/>
+      </div>
+      <br/>
+      Demo date:<br/>
+      <input type="date" name="demodate"><br/>
+      <br/>
+      Demo time:<br/>
+      <input type="time" name="demotime">
+    </fieldset>
+    <br/>
+    Let's schedule the demo...<br/>
+    <br/>
+    <input type="button" name="search" value="Search">
+    <input type="button" name="restart" value="Restart">
+</body>
+</html>
