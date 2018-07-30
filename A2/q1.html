@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  function validateNumber(){
+    var num = document.getElementById('num').value;
+    if (/[^0-9]/.test(num)){
+      alert("Please enter numeric value");
+    } else {
+      analyzeNumber();
+    }
+  }
+
+  function analyzeNumber(){
+    var num = document.getElementById('num').value;
+    var x = parseInt(num, 10);
+    if (Math.sqrt(num) - Math.floor(Math.sqrt(num)) > 0){
+      alert("Not a squared number");
+    } else {
+      alert("It is a squared number and the sum of the digits is " + sumDigits());
+    }
+  }
+
+  function sumDigits(){
+    var num = document.getElementById('num').value;
+    var x = parseInt(num, 10);
+    return (x+x);
+  }
+  </script>
+</head>
+<body>
+  <input type="text" id="num" placeholder="Enter your number">
+  <button onclick="validateNumber()">Try it</button>
+</body>
+</html>

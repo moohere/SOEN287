@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="q3.css">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <table>
+    <tbody>
+      <tr>
+        <td class="row">Input Number: </td>
+        <td class="col1"><input type="text" name="numbers" id="num"></td>
+      </tr>
+      <tr>
+        <td>Input Digits: </td>
+        <td class="col2"><input type="text" name="digits" id="dig"></td>
+      </tr>
+      <tr class="row">
+        <td colspan="2" class="col2"><button class="btn" onclick="doClick()">Plot Histogram</button></td>
+      </tr>
+    </tbody>
+  </table>
+<div id="hist"></div>
+<script>
+function doClick(){
+  var number = document.getElementById('num').value;
+  var array = [];
+
+  var digits = document.getElementById('dig').value.split(" ");
+
+  for (var i = 0; i < number.length; i++){
+    for (var j = 0; j < digits.length; j++){
+      if (number.charAt(i) == digits[j]){
+        array[i] = number.charAt(i);
+      }
+    }
+  }
+
+  var trace = {
+    x: array,
+    type: 'histogram',
+    marker: {color: '#7ed6df',},
+  };
+  var layout = {
+    bargap: 0.1,
+    bargroupgap: 0.5,
+    title: "Histogram",
+    xaxis: {title: "Value"},
+    yaxis: {title: "Count"},
+  };
+
+  var data = [trace];
+  Plotly.newPlot('hist', data, layout);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+  function numberStats(number){
+    if (!/(soen287|comp249|assignment2|SOEN287|COMP249|ASSIGNMENT2)/.test(number)){
+      document.getElementById('print').innerHTML = number.toUpperCase();
+    } else {
+        var words = number.split(" ");
+        var print = "";
+        for (var i = 0; i < words.length; i++){
+          if (/(soen287|comp249|assignment2|SOEN287|COMP249|ASSIGNMENT2)/.test(words[i])){
+            print += words[i].toUpperCase() + " ";
+          } else {
+            print += words[i] + " ";
+          }
+        }
+        document.getElementById('print').innerHTML = print;
+    }
+
+  }
+
+  </script>
+</head>
+<body>
+  <input type="text" id="input" placeholder="Enter something">
+  <button onclick="numberStats(document.getElementById('input').value)">Go</button>
+  <div id="print"></div>
+</body>
+</html>
