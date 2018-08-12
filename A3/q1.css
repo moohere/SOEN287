@@ -1,0 +1,59 @@
+.form{
+  font-family: Arial;
+  background-color: #7f8c8d;
+  width: 220px;
+  margin: 5px 5px 5px 5px;
+}
+
+.header {
+  padding-top: 15px;
+  background-color: #7f8c8d;
+  text-align: center;
+}
+
+.welcome {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.msg {
+  font-size: 12px;
+  color: white;
+}
+
+.body {
+  padding: 5px 5px 5px 5px;
+}
+
+.formInput {
+  background-color: white;
+  font-size: 12px;
+  color: #7f8c8d;
+}
+
+.login {
+  padding-bottom: 5px;
+  font-size: 10px;
+}
+
+.checkbox {
+  float: left;
+  font-size: 12px;
+}
+
+.email { width: 180px;}
+.password { width: 180px;}
+
+.checkbox {
+  margin-top: 15px;
+  font-size:
+}
+
+#submit {
+  background-color: #7f8c8d;
+  float: right;
+  color: white;
+  margin-top: 15px;
+  margin-right: 0px;
+}
